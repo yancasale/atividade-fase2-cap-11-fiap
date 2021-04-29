@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
+    <link rel="shortcut icon" href="https://on.fiap.com.br/theme/image.php/fiap/theme/1614110061/favicon" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -16,7 +17,7 @@
     <header class="cabecalho">
         <div class="container-cabecalho">
             <div class="cabecalho-logo">
-               <img src="./images/logo.png" alt="Logo Traveller">
+                <img src="./images/logo.png" alt="Logo do Site">
             </div>
 
             <nav class="cabecalho-menu">
@@ -28,6 +29,87 @@
             </nav>
         </div>
     </header>
+
+    <div class="menu-principal">
+        <div class="container-menu-principal">
+            <nav class="menu-principal">
+                <ul>
+                    <li id="hospedagem"><a href=""><i class="fas fa-suitcase-rolling"></i> Hospedagem</a></li>
+                    <li><a href=""><i class="fas fa-car"></i> Carro</a></li>
+                    <li><a href=""><i class="fas fa-utensils"></i> Gastronomia</a></li>
+                    <li><a href=""><i class="fas fa-ticket-alt"></i> Passagens</a></li>
+                    <li><a href=""><i class="fas fa-glass-cheers"></i> Entretenimento</a></li>
+                    <li><a href=""><i class="fas fa-ellipsis-h"></i> Dicas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <div class="container-hospedagem">
+            <section class="buscar-hoteis">
+                <h2>Buscar Hoteis para hospedagem</h2>
+                <div class="container-input">
+                    <div class="input-cidade">
+                        <input type="text" placeholder="Insira uma cidade, hotel ou atração">
+                        <input placeholder="Data da estadia" class="textbox-n" type="text" onfocus="(this.type='date')"
+                            onblur="(this.type='text')" id="date" />
+                        <button type="submit"><i class="fas fa-search"></i> Buscar</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <div class="container-encontre-hotel">
+            <div class="titulo-hotel">
+                <h2>Encontre o hotel ideal para você</h2>
+            </div>
+
+            <div class="container-box">
+                <section class="box">
+                    <article>
+                       <img src="./images/Rio-de-janeiro.png" alt="Imagem da cidade Rio de Janeiro">
+                       <h3>Se hospede em Rio de Janeiro</h3>
+                       <p>Avaliação dos usuários : <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i></p>
+                       <a href="" class="link-acomodações">Ver acomodações</a> <a href=""></a>
+                    </article>
+                </section>
+
+                <section class="box">
+                    <article>
+                       <img src="./images/São Paulo.jfif" alt="Imagem da cidade São Paulo">
+                       <h3>Se hospede em São Paulo</h3>
+                       <p>Avaliação dos usuários : <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i></p>
+                       <a href="" class="link-acomodações">Ver acomodações</a> <a href=""></a>
+                    </article>
+                </section>
+
+                <section class="box">
+                    <article>
+                        <img src="./images/campos-jordao.jpg" alt="Imagem da cidade Campos do Jordão">
+                       <h3>Se hospede em Campos do Jordão</h3>
+                       <p>Avaliação dos usuários : <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                       <a href="" class="link-acomodações">Ver acomodações</a> <a href=""></a>
+                    </article>
+                </section>
+
+                <section class="box">
+                    <article>
+                        <img src="./images/ubatuba.jpg" alt="Imagem da cidade Ubatuba">
+                       <h3>Se hospede em Ubatuba</h3>
+                       <p>Avaliação dos usuários : <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i></p>
+                       <a href="" class="link-acomodações">Ver acomodações</a> <a href=""></a>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+         <p>Todos os direitos reservados Projeto Traveller - FIAP 2021</p>
+    </footer> 
+
 </body>
 
 </html>

@@ -11,6 +11,14 @@ html {
     font-size: 16px;
 }
 
+body {
+    background-color: #E9EAEC;
+}
+
+main {
+    background-color: #E9EAEC;
+}
+
 ul {
     list-style: none;
 }
@@ -18,6 +26,7 @@ ul {
 a {
     text-decoration: none;
 }
+
 
 .cabecalho {
     display: flex;
@@ -31,7 +40,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 70%;
     height: 140px;
     margin: 0 auto;
 }
@@ -45,10 +54,10 @@ a {
 
 .cabecalho-menu {
     display: flex;
+    height: 33px;
     color: #000;
     background-color: #E9EAEC;
     border-radius: 10px;
-    height: 35px;
 }
 
 .cabecalho-menu ul {
@@ -57,18 +66,339 @@ a {
 }
 
 .cabecalho-menu a {
-    color: #000;
     padding: 7px 15px;
+    color: #000;
 }
 
 .cabecalho-menu a:hover {
-    background-color:#fff;
     border-radius: 10px;
+    background-color: #fff;
 }
 
-#login, #informacoes, #ajuda {
+#login,
+#informacoes,
+#ajuda {
     margin-right: 5px;
 }
 
+.container-menu-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #E9EAEC;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.521);
+}
+
+.menu-principal ul,
+a {
+    color: #000;
+    display: flex;
+}
+
+.menu-principal i {
+    margin-right: 5px;
+}
+
+.menu-principal li {
+    padding: 15px 15px;
+}
+
+.menu-principal a:hover {
+    color: #F64C72;
+    font-weight: 600;
+}
+
+#hospedagem {
+    border-bottom: 2px solid #F64C72;
+}
+
+#hospedagem a {
+    color: #F64C72;
+    font-weight: 600;
+}
+
+.container-hospedagem {
+    width: 100%;
+    height: 240px;
+    padding: 20px;
+    background-color: #24268242;
+}
+
+.buscar-hoteis {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 13px;
+    background-color: #2F2FA2;
+}
+
+.buscar-hoteis h2 {
+    width: 88%;
+    height: 30px;
+    padding-top: 25px;
+    margin: 0px auto;
+    color: #fff;
+
+}
+
+.container-input {
+    display: flex;
+}
+
+.input-cidade {
+    display: flex;
+    width: 90%;
+    padding-top: 55px;
+    margin: 0 auto;
+}
+
+.input-cidade input {
+    width: 40%;
+    padding: 10px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
 
 
+.input-cidade button {
+    width: 20%;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #F64C72;
+}
+
+.container-encontre-hotel {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 660px;
+    margin: 0 auto;
+}
+
+.titulo-hotel {
+    width: 100%;
+    margin: 60px auto;
+}
+
+.container-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width: 23%;
+    height: 450px;
+    border-radius: 20px;
+    border: 2px solid #2f2fa218;
+}
+
+.box img {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.box h3 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #000;
+}
+
+.link-acomodações {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    padding: 5px 10px;
+    margin: 50px auto;
+    color: #fff;
+    background-color: #F64C72;
+    border-radius: 30px;
+}
+
+.box p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    font-size: 0.8em;
+    color: #fff;
+    background-color: #242582;
+}
+
+/* media queries */
+
+@media (max-width: 1567px) {
+
+    .container-encontre-hotel {
+         height: 1200px;
+    }
+
+    .container-box {
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 29%;
+        height: 450px;
+        border-radius: 20px;
+        border: 2px solid #2f2fa218;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1239px) {
+
+    .container-encontre-hotel {
+         height: 1200px;
+    }
+
+    .container-box {
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 35%;
+        height: 450px;
+        border-radius: 20px;
+        border: 2px solid #2f2fa218;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1241px) {
+
+    .buscar-hoteis {
+        width: 80%;
+    }
+
+    .container-encontre-hotel {
+         height: 1200px;
+    }
+
+    .container-box {
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 40%;
+        height: 450px;
+        border-radius: 20px;
+        border: 2px solid #2f2fa218;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1025px) {
+
+    .buscar-hoteis {
+        width: 80%;
+    }
+
+    .container-encontre-hotel {
+         height: 1200px;
+    }
+
+    .container-box {
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 40%;
+        height: 450px;
+        border-radius: 20px;
+        border: 2px solid #2f2fa218;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 901px) {
+
+    .cabecalho-menu {
+        font-size: 0.8em;
+}
+
+    .buscar-hoteis {
+        width: 80%;
+    }
+
+    .cabecalho-menu {
+        font-size: 0.9em;
+
+    }
+
+    .container-encontre-hotel {
+         height: 1200px;
+    }
+
+    .container-box {
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 50%;
+        height: 450px;
+        border-radius: 20px;
+        border: 2px solid #2f2fa218;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 791px) {
+    .cabecalho-menu {
+        font-size: 0.8em;
+}
+
+    .cabecalho-menu {
+        font-size: 0.7em;
+}
+
+}
+
+@media (max-width: 719px) {
+    .menu-principal li {
+        font-size: 0.9em;
+    }
+
+    .cabecalho-menu {
+        font-size: 0.8em;
+}
+
+    .cabecalho-menu {
+        font-size: 0.7em;
+}
+
+.buscar-hoteis {
+    width: 100%;
+}
+
+.link-acomodações {
+    font-size: 0.9em;
+}
+
+}
+
+@media (max-width: 711px) {
+    .cabecalho-menu {
+        font-size: 0.8em;
+}
+
+
+}
